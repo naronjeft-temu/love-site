@@ -1,0 +1,88 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>For You ❤️</title>
+<style>
+body{margin:0;font-family:sans-serif;background:linear-gradient(135deg,#1e1e2f,#3a3a5f);color:#fff;overflow-x:hidden}
+.c{background:rgba(255,255,255,.05);margin:20px;padding:25px;border-radius:20px;backdrop-filter:blur(10px);animation:f 1.2s}
+@keyframes f{from{opacity:0;transform:translateY(20px)}to{opacity:1}}
+h1{text-align:center;font-size:2.5em;background:linear-gradient(to right,#ff9a9e,#fad0c4);-webkit-background-clip:text;color:transparent}
+p{text-align:center}
+button{padding:12px 25px;margin:10px;border:none;border-radius:20px;background:#ff6b81;color:#fff;cursor:pointer}
+.g{display:flex;gap:10px;overflow:auto}
+.g img,.g video{height:180px;border-radius:10px}
+.t{border-left:2px solid pink;padding-left:15px;margin-top:20px}
+.i{opacity:0;transform:translateX(-20px);transition:.5s;margin-bottom:15px}
+.i.s{opacity:1;transform:none}
+.heart{position:fixed;bottom:-10px;animation:up 5s linear;font-size:18px}
+@keyframes up{to{transform:translateY(-100vh);opacity:0}}
+</style></head>
+
+<body>
+<div class="c">
+<h1>Hi Isis[La chica más bonita que significa mucho para mí.] 💖</h1>
+<p>I made this for you 😊</p>
+
+<button onclick="d()">Click 💌</button>
+<p id="m" style="display:none;font-size:1.3em">I really like you ❤️</p>
+
+<h3>📸 Memories</h3>
+<div class="g">
+<img src="303.jpg">
+<img src="311.jpg">
+<img src="304.jpg">
+<img src="312.jpg">
+<img src="305.jpg">
+<img src="313.jpg">
+<img src="306.jpg">
+<img src="314.jpg">
+<img src="307.jpg">
+<img src="315.jpg">
+<img src="308.jpg">
+<img src="316.jpg">
+<img src="309.jpg">
+<img src="317.jpg">
+<img src="318.jpg">
+<img src="319.jpg">
+<img src="320.jpg">
+<img src="325.jpg">
+<img src="322.jpg">
+<img src="323.jpg">
+<img src="310.jpg">
+<video controls><source src="929fd23b-bff1-439d-9017-82002ba54ac2.mp4"></video>
+<video controls><source src="042303ab-46cf-4cd8-90e1-bbc32c6d793d.mp4"></video>
+<video controls><source src="cc0895a5-b752-4fb2-8953-65112959c105.mp4"></video>
+</div>
+
+<h3>📜 Our Story</h3>
+<div class="t">
+<div class="i">✨ El día en que nos conocimos, sin saberlo, encontré a alguien muy especial para mí.
+(The day we met, without knowing it, I found someone very special to me.)</div>
+<div class="i">😊 Nuestro mejor recuerdo es algo que siempre voy a guardar en mi corazón.
+(Our best memory is something I’ll always keep in my heart.)</div>
+<div class="i">❤️ Sigo pensando en ti, no importa el día ni la hora.
+(I’m still thinking of you, no matter the day or time.)</div>
+</div>
+
+<h3>💘 One last question...</h3>
+<p>Will you be my girlfriend? 🥺</p>
+<button onclick="y()">YES 💖</button>
+<button id="n">NO 😅</button>
+<p id="r"></p>
+</div>
+
+<audio id="music" autoplay loop><source src="music/song.mp3"></audio>
+
+<script>
+function d(){m.style.display="block"}
+function y(){r.innerHTML="YAY!! ❤️ You made me so happy 😭💖"}
+
+const n=document.getElementById("n");
+n.onmouseover=()=>{n.style.position="absolute";n.style.left=Math.random()*90+"vw";n.style.top=Math.random()*90+"vh"}
+
+window.onclick=()=>music.play();
+
+document.querySelectorAll(".i").forEach(e=>{
+window.addEventListener("scroll",()=>{if(e.getBoundingClientRect().top<innerHeight-40)e.classList.add("s")})
+});
+
+setInterval(()=>{let h=document.createElement("div");h.className="heart";h.innerHTML="❤️";h.style.left=Math.random()*100+"vw";document.body.appendChild(h);setTimeout(()=>h.remove(),5000)},300);
+</script>
+</body></html>s
